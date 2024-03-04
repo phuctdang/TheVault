@@ -15,4 +15,4 @@ const msg = str + `${codeOne} - ${codeTwo} - ${codeThree}`;
 console.log(msg);
 
 //creating an alert box message using the created variables
-alert (msg)
+//alert (msg)

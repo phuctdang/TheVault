@@ -15,10 +15,11 @@
   <script>
     function myFunction() {
       let txt;
-      if (confirm("Enter the Code")) {
-        txt="Correct! Vault unlocked.";
+      let person = prompt("Enter Code: 10-40-39","00-00-00");
+      if (person == "10-40-39") {
+        txt="Vault unlocked.";
       } else {
-        txt="Incorrect code entered. INTRUDER ALERT!!!";
+        txt="Incorrect code entered.";
       }
       document.getElementById("demo").innerHTML = txt;
     }
