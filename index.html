@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" style="background-color: grey;">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script defer src="./index.js"></script>
+  <link rel="stylesheet" href="./index.css">
+  <title>Vault</title>
+</head>
+
+<body>
+  <button onclick="myFunction()">?</button>
+  <p id="demo"></p>
+
+  <script>
+    function myFunction() {
+      let txt;
+      if (confirm("Enter the Code")) {
+        txt="Correct! Vault unlocked.";
+      } else {
+        txt="Incorrect code entered. INTRUDER ALERT!!!";
+      }
+      document.getElementById("demo").innerHTML = txt;
+    }
+  </script>
+</body>
+</html>
